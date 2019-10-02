@@ -75,11 +75,11 @@ function before(obj, method, fn) {
 function main() {
   var downloadURL = 'https://' + ipAddress + ':' + port + '/download';
   var cerURL = 'http://' + ipAddress + ':' + port2 + '/cer';
-  qrcode.generate(cerURL);
-  console.log('Install CA certification on iOS 11 ' + cerURL);
-  console.log('\n');
-  qrcode.generate(downloadURL);
-  console.log('Open download page ' + downloadURL);
+  // qrcode.generate(cerURL);
+  console.log(downloadURL);
+  // console.log('\n');
+  // qrcode.generate(downloadURL);
+  // console.log('Open download page ' + downloadURL);
   var destinationPath = program.args.shift() || '.';
   var ipasDir = destinationPath;
 
